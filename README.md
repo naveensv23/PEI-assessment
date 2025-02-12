@@ -31,7 +31,7 @@ The data was provided by **PEI for assessment purposes**. Three different files 
 
 ## Data Preparation  
 
-![](snapshot/Customer_Data_Profile.png)
+![](Customer_Data_Profile.png)
 
 https://github.com/naveensv23/PEI-assessment/blob/ac22500af3c4e8440db40276a9b9f321907eda1e/Customer%20Data%20Model.png 
 
