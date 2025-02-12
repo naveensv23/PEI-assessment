@@ -32,21 +32,22 @@ The data was provided by **PEI for assessment purposes**. Three different files 
 ## Data Preparation  
 
 ![](Customer_Data_Profile.png)
-
+![](Order_Data_profile.png)
 ### Data Cleaning & Transformation  
 - Promoted headers for each table.  
 - Created a **separate measure table** for better organization.  
 - Added a **refresh table** to monitor data update frequency.  
 
 ### Data Modeling  
-- Power BI **automatically identified related tables**, resulting in a **star schema model**.  
+- Power BI **automatically identified related tables**, resulting in a **star schema model**.
+![](Auto_genrated_Data model.png)
 - Adjusted the model, treating:  
   - **Order Table** as a **Fact Table**  
   - **Shipping Table** as another **Fact Table**  
   - **Customer Table** as a **Dimension Table**  
 - Established a **many-to-many relationship** between the **Order Table** and **Shipping Table** due to business requirements.  
 - Defined a **one-to-many relationship** between Customers and Orders.  
-
+![](Data_model.png)
 ## Data Blending  
 - **Converted the JSON file to CSV using Jupyter Notebook** (Jupyter Notebook file is included in the repository).  
 
@@ -56,19 +57,25 @@ The Power BI report consists of **four key pages**:
 2. **Summary** – Key business insights.  
 3. **Missing Shipping to Customers** – Identifies missing shipping IDs.  
 4. **Tooltip** – Provides additional details on delivery status.  
-
+![](Dashboard.png)
 ### Features & Insights  
 - **Summary page includes tooltips** to help users quickly interpret delivery statuses.  
 - Analysis findings:  
-  1. **Pending Deliveries**: The total amount spent and pending delivery status by country.  
-  2. **Customer Analysis**: Total transactions, total quantity sold, and spending per customer.  
-  3. **Top-Selling Products per Country**:  
+  1. **Pending Deliveries**: The total amount spent and pending delivery status by country.
+     
+     ![](Pending_Delivery.png)
+     
+  3. **Customer Analysis**: Total transactions, total quantity sold, and spending per customer.
+  ![](Total_Sales.png)
+  4. **Top-Selling Products per Country**:  
      - **UK** – Mousepad  
      - **USA** – Mousepad  
-     - **UAE** – Keyboard  
-  4. **Top-Selling Products by Age Group**:  
+     - **UAE** – Keyboard
+       
+  ![](Age_wise_product_purchase.png)
+  5. **Top-Selling Products by Age Group**:  
      - Monitors were the most purchased product across all three countries.  
-  5. **Lowest Sales & Transactions**:  
+  6. **Lowest Sales & Transactions**:  
      - **UAE had the lowest number of transactions and sales amount**.  
 
 ## Conclusion  
