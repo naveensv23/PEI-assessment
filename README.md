@@ -30,6 +30,13 @@ The data was provided by **PEI for assessment purposes**. Three different files 
 3. **Order details** – CSV format (4 columns, 250 rows)  
 
 ## Data Preparation  
+![](snapshot/Customer Data Profile.png) 
+![](snapshot/Customer%20Data%20Profile.png)
+
+
+
+
+
 
 ### Data Cleaning & Transformation  
 - Promoted headers for each table.  
